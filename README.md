@@ -1,5 +1,5 @@
 
-# Website [link](https://udrasht.github.io/News-Website-By-Using-API.github.io/HTML/index.html)
+# News Website [link](https://udrasht.github.io/News-Website-By-Using-API.github.io/HTML/index.html)
 It is the simple news website:\
 How to run this website:
 -  a)Go to HTML folder
