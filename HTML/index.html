@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>News App</title>
+  <style>
+    .news{
+      position: absolute;
+        top:200px;
+      width: 800px;
+      align-items: center;
+    }
+
+nav img{
+      width:100px;
+      
+      border-radius:27%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+    footer{
+      display: flex;
+      position: fixed;
+       bottom: 0;
+      height: 50px;
+      background-color: #1e133b;
+      text-align: center;
+      
+      width: 100%;
+    }
+    footer h5{
+      
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+      position: absolute;
+      left: 440px;
+  
+    }
+    nav{
+      display: flex;
+      position: absolute;
+      top: 0;
+      left:0;
+      width: 100%;
+
+    }
+
+    nav h1{
+      font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 10vmin;
+        
+  
+    }
+    nav h4{
+      font-size: 20px;
+  font-weight: 200;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 3vmin;
+
+    }
+
+    .searchbar{
+      width: 20%;transform: scale(1.3);
+      position: absolute;
+      top:30px;
+      left:950px;
+      ;
+    }
+    button{
+      font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #4c3981, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+ 
+    }
+    body{
+      width: 100vw;
+      height: 100vw;
+     
+      background-position: bottom;
+      background-size: cover;
+      justify-content: center;
+
+      
+
+    }
+    div.banner { float: left;
+      top:300px;
+      left:1000px;
+       width: 200px;
+        height: 400px;
+      position: absolute; }
+
+      div.banner1 { 
+        float: left;
+      top:750px;
+      left:1000px;
+       width: 200px;
+        height: 400px;
+      position: absolute; }
+      div.banner2 { 
+        float: left;
+      top: 120px;
+      left:40px;
+       width: 200px;
+        height: 400px;
+      position: absolute; }
+      div.banner3 { 
+        float: left;
+      top: 1200px;
+      left:1000px;
+       width: 200px;
+        height: 800px;
+      position: absolute; }
+
+      div.banner4 { 
+        float: left;
+      top: 2100px;
+      left:1000px;
+       width: 200px;
+        height: 800px;
+      position: absolute; }
+
+      
+
+
+  </style>
+</head>
+
+<body >
+  <header class="top">
+    
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="./../images/logo.jpg" width="120px">
+    <a class="navbar-brand" href="#"><h1>News Box</h1></a>
+<h4>India News</h4>    
+    <!-- <div class="searchbar" >
+      <input type="text"  id="searchword"class="form-control shadow" placeholder="What you looking for ?"
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-danger shadow" onclick="fetchnews()" type="button" id="button-addon2">Search</button>
+    </div> -->
+    <div class="container m-10">
+      
+      <div class="col-10 d-flex justify-content-center">
+        <div class="input-group mb-6" style="width: 50%;transform: scale(1.3);">
+          <input type="text"  id="searchword"class="form-control shadow" placeholder="What you looking for ?"
+          aria-label="Recipient's username" aria-describedby="button-addon2">
+           <button class="btn btn-danger shadow" onclick="fetchnews()" type="button" id="button-addon2">Search</button>
+        </div>
+      </div>
+  
+    </div>
+
+  </nav>
+  <div class="wrapper2">
+    
+  </div>
+  <div class="wrapper">
+    
+  </div>
+  <div class="wrapper1">
+    
+  </div>
+</div>
+<div class="wrapper4">
+  
+</div>
+<div class="wrapper5">
+  
+</div>
+  
+  
+    <!-- <div class="container m-5">
+    <div class="d-flex justify-content-center mb-3"><img src="images/icon.png" width="150px"></div>
+    <div class="col-12 d-flex justify-content-center">
+      <div class="input-group mb-3" style="width: 50%;transform: scale(1.3);">
+        <input type="text"  id="searchword"class="form-control shadow" placeholder="What you looking for ?"
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+         <button class="btn btn-danger shadow" onclick="fetchnews()" type="button" id="button-addon2">Search</button>
+      </div>
+    </div>
+
+  </div> -->
+
+
+  <div class="news">
+  <div class="containerv posts" id="xyz">
+
+    
+    
+    </div>
+</div>
+   
+
+  
+    
+ <footer>
+
+
+  <div class="footer">
+    <div class="footerleft">
+     
+       <h5>© News Box | India | Designed by Udrasht pal</h5>
+    </div>
+
+  </div>
+ </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"; integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=";
+  crossorigin="anonymous"></script>
+  
+ 
+  <script>
+    var adurl="./../JSON/adv.json";
+    $.get(adurl,(response1)=>{
+      console.log(response1);
+      var html1=`<div class="banner">
+                <a  href="${response1[0].url}">
+                  <IMG SRC="${response1[0].image}">
+                 </a></div>`
+                 $(".wrapper").append(html1);
+
+    })
+
+    var adur2="./../JSON/adv2.json";
+    $.get(adur2,(response2)=>{
+      console.log(response2);
+      var html2=`<div class="banner1">
+                    <a  href="${response2[0].url}">
+                  <IMG SRC="${response2[0].image}">
+                    </a></div>`
+                 
+                 $(".wrapper1").append(html2);
+
+    })
+    var adur3="./../JSON/ad3.json";
+    $.get(adur3,(response3)=>{
+      console.log(response3);
+      var html3=`<div class="banner2">
+                    <a  href="${response3[0].url}">
+                  <IMG SRC="${response3[0].image}">
+                    </a></div>`
+                 
+                 $(".wrapper2").append(html3);
+
+    })
+
+    
+    var adur4="./../JSON/adv6.json";
+    $.get(adur4,(response4)=>{
+      console.log(response4);
+      var html4=`<div class="banner3">
+                    <a  href="${response4[0].url}">
+                  <IMG SRC="${response4[0].image}">
+                    </a></div>`
+                 
+                 $(".wrapper5").append(html4);
+
+    })
+
+    var adur5="./../JSON/adv5.json";
+    $.get(adur5,(response5)=>{
+      console.log(response5);
+      var html5=`<div class="banner4">
+                    <a  href="${response5[0].url}">
+                  <IMG SRC="${response5[0].image}">
+                    </a></div>`
+                 
+                 $(".wrapper4").append(html5);
+
+    })
+      var html;
+    fetchnews()
+    
+    function fetchnews(){
+      var searchword=$("#searchword").val();
+      document.getElementById('xyz').innerHTML="";
+      if(searchword==""){
+
+        searchword="india";
+      }
+      html='';
+    
+       var url = "https://gnews.io/api/v4/search?q="+searchword+"&token=7685af7d819eb1821cec487eb58b51d6";
+      $("#load_ui").show();
+      $.get(url, (response) => {
+      console.log(response.articles);
+      
+      for(i=0;i<response.articles.length;i++){
+       html =`<div class="card m-3 shadow">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="${response.articles[i].image}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${response.articles[i].title}</h5>
+            <p class="card-text">${response.articles[i].description}</</p>
+            <p class="card-text"><small class="text-muted">${response.articles[i].publishedAt} || </small>
+            <small class="text-muted">${response.articles[i].source.name}</small></p>
+            <p><a href="${response.articles[i].url}" class="btn btn-secondary" target="-next">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>`
+      $(".posts").append(html);
+
+      }
+    });
+    }
+   
+    // var url1="javascript:window.open(window.clickTag)";
+    // console.log(myJson.hello);
+    // $.get(url1,(response)=>{
+    //   console.log(response);
+    // })
+
+    
+
+  </script>
+   
+
+</body>
+
+</html>
